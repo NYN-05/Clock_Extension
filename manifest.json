@@ -1,0 +1,13 @@
+{
+    "manifest_version": 3,
+    "name": "Aesthetic New Tab",
+    "version": "2.0",
+    "description": "A futuristic new tab with clock, search, weather, and shortcuts.",
+    "icons": {
+      "128": "icon.png"
+    },
+    "chrome_url_overrides": {
+      "newtab": "newtab.html"
+    }
+  }
+  

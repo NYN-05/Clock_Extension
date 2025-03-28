@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Tab - Aesthetic UI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <video autoplay loop muted>
+        <source src="background1.mp4" type="video/mp4">
+    </video>
+
+    <div class="container">
+        <div class="weather-container">
+            <p id="weather">Loading weather...</p>
+        </div>
+
+        <div class="search-container">
+            <input id="searchInput" type="text" placeholder="Search Google">
+        </div>
+
+        <div class="clock-container">
+            <h1 id="clock">00:00:00</h1>
+            <p id="greeting">Loading...</p>
+            <p id="date"></p>
+            <p id="weather">Fetching weather...</p>
+        </div>
+
+        <!-- <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search Google...">
+        </div> -->
+
+        <div class="shortcuts">
+            <a href="https://www.youtube.com" target="_blank">YouTube</a>
+            <a href="https://www.github.com" target="_blank">GitHub</a>
+            <a href="https://mail.google.com" target="_blank">Gmail</a>
+            <a href="https://www.reddit.com" target="_blank">Reddit</a>
+        </div>
+    </div>
+
+    <script src="newtab.js"></script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+/* ========== General Styles ========== */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+    perspective: 1000px;
+    background: linear-gradient(to right, #121212, #1a1a1a);
+}
+
+/* Background Video */
+video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+/* ========== Clock & Greeting ========== */
+.clock-container {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.clock-container:hover {
+    transform: scale(1.05);
+}
+
+/* Clock Glow */
+#clock {
+    font-size: 4.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-shadow: 0px 0px 20px rgba(0, 204, 255, 0.7);
+    color: #00ccff;
+    animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+    from { text-shadow: 0px 0px 10px rgba(0, 204, 255, 0.5); }
+    to { text-shadow: 0px 0px 30px rgba(0, 204, 255, 1); }
+}
+
+#greeting {
+    font-size: 1.8rem;
+    color: #f3f3f3;
+}
+
+/* ========== Search Bar ========== */
+.search-bar {
+    margin-top: 20px;
+}
+
+#searchInput {
+    width: 400px;
+    padding: 12px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    font-family: 'Inter', sans-serif;
+    transition: 0.3s;
+    backdrop-filter: blur(8px);
+    box-shadow: 0px 5px 20px rgba(255, 255, 255, 0.1);
+}
+
+#searchInput:focus {
+    background: rgba(255, 255, 255, 0.3);
+    color: black;
+}
+
+/* ========== Search Bar at the Top ========== */
+.search-container {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    text-align: center;
+}
+
+#searchInput {
+    width: 100%;
+    max-width: 500px;
+    padding: 12px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    font-family: 'Inter', sans-serif;
+    transition: 0.3s;
+    backdrop-filter: blur(8px);
+    box-shadow: 0px 5px 20px rgba(255, 255, 255, 0.1);
+}
+
+#searchInput:focus {
+    background: rgba(255, 255, 255, 0.3);
+    color: black;
+}
+
+
+/* ========== Shortcut Buttons ========== */
+.shortcuts {
+    margin-top: 20px;
+}
+
+.shortcuts a {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 18px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.15);
+    transition: 0.3s ease-in-out;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 5px 15px rgba(0, 255, 255, 0.2);
+}
+
+.shortcuts a:hover {
+    transform: scale(1.1);
+    background: rgba(255, 255, 255, 0.3);
+    color: #000;
+}
+
+/* ========== Dark Mode Toggle ========== */
+.dark-mode {
+    background: linear-gradient(to right, #000000, #202020);
+    color: white;
+}
+
+.dark-mode .clock-container {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode #clock {
+    color: #ffcc00;
+    text-shadow: 0px 0px 20px rgba(255, 204, 0, 0.8);
+}
